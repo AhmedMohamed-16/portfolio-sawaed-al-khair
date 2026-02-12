@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تبرع الآن لدعم الأسر المحتاجة - سواعد الخير">
+    <meta name="keywords" content="تبرع, صدقة, زكاة, كفالة يتيم, سواعد الخير">
+    <title>تبرع الآن - سواعد الخير</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo-tap.png" type="image/png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="سواعد الخير">
+                    <span>سواعد الخير</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="projects.html">أنشطتنا</a></li>
+                    <li><a href="reports.html">الشفافية والتقارير</a></li>
+                    <li><a href="volunteer.html">تطوع معنا</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+                <a href="donate.html" class="btn-donate active">تبرع الآن</a>
+                <button class="menu-toggle" aria-label="القائمة">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="مسار التنقل">
+                    <ol>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li aria-current="page">تبرع</li>
+                    </ol>
+                </nav>
+                <h1>ساهم معنا</h1>
+                <p class="page-subtitle">تبرعك اليوم يصنع فرقًا في حياة أسرة محتاجة</p>
+            </div>
+        </section>
+
+        <!-- Islamic Motivation Section -->
+        <section class="islamic-motivation">
+            <div class="container">
+                <div class="motivation-content">
+                    <blockquote class="quran-verse">
+                        <p>"مَثَلُ الَّذِينَ يُنفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنبَتَتْ
+                            سَبْعَ سَنَابِلَ فِي كُلِّ سُنبُلَةٍ مِّائَةُ حَبَّةٍ"</p>
+                        <cite>سورة البقرة - آية 261</cite>
+                    </blockquote>
+                    <blockquote class="hadith">
+                        <p>"ما نقص مال من صدقة"</p>
+                        <cite>رواه مسلم</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Donation Section -->
+        <section class="quick-donation">
+            <div class="container">
+                <h2 class="section-title">اختر مبلغ التبرع</h2>
+                <div class="donation-amounts">
+                    <button class="amount-btn" data-amount="100">100 جنيه</button>
+                    <button class="amount-btn" data-amount="250">250 جنيه</button>
+                    <button class="amount-btn" data-amount="500">500 جنيه</button>
+                    <button class="amount-btn" data-amount="1000">1000 جنيه</button>
+                    <button class="amount-btn" data-amount="2000">2000 جنيه</button>
+                    <button class="amount-btn custom-amount">مبلغ آخر</button>
+                </div>
+                <div class="custom-amount-input" style="display: none;">
+                    <label for="custom-donation-amount">أدخل المبلغ:</label>
+                    <input type="number" id="custom-donation-amount" placeholder="المبلغ بالجنيه المصري" min="1">
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Categories Section -->
+        <section class="donation-categories">
+            <div class="container">
+                <h2 class="section-title">أو اختر نوع التبرع</h2>
+                <div class="categories-grid">
+
+                    <!-- Category 1: Orphan Sponsorship -->
+                    <article class="category-card">
+                        <div class="category-icon">
+                            <img src="images/icons/orphan.svg" alt="كفالة يتيم">
+                        </div>
+                        <h3>كفالة يتيم</h3>
+                        <div class="category-amount">300 جنيه شهريًا</div>
+                        <p>توفر كفالة شهرية كاملة ليتيم من الطعام والملبس والتعليم.</p>
+                        <button class="btn btn-primary select-category" data-category="orphan"
+                            data-amount="300">اختر</button>
+                    </article>
+
+                    <!-- Category 2: Family Sponsorship -->
+                    <article class="category-card">
+                        <div class="category-icon">
+                            <img src="images/icons/family.svg" alt="كفالة أسرة">
+                        </div>
+                        <h3>كفالة أسرة</h3>
+                        <div class="category-amount">500 جنيه شهريًا</div>
+                        <p>تساعد أسرة كاملة على تلبية احتياجاتها الأساسية.</p>
+                        <button class="btn btn-primary select-category" data-category="family"
+                            data-amount="500">اختر</button>
+                    </article>
+
+                    <!-- Category 3: Medical Treatment -->
+                    <article class="category-card">
+                        <div class="category-icon">
+                            <img src="images/icons/medical.svg" alt="علاج مريض">
+                        </div>
+                        <h3>علاج مريض</h3>
+                        <div class="category-amount">حسب الحالة</div>
+                        <p>تساهم في علاج مريض غير قادر على تكاليف العلاج.</p>
+                        <button class="btn btn-primary select-category" data-category="medical">اختر</button>
+                    </article>
+
+                    <!-- Category 4: Marriage Facilitation -->
+                    <article class="category-card">
+                        <div class="category-icon">
+                            <img src="images/icons/marriage.svg" alt="تيسير زواج">
+                        </div>
+                        <h3>تيسير زواج</h3>
+                        <div class="category-amount">من 5000 جنيه</div>
+                        <p>تساعد شابًا أو فتاة على بدء حياة زوجية كريمة.</p>
+                        <button class="btn btn-primary select-category" data-category="marriage"
+                            data-amount="5000">اختر</button>
+                    </article>
+
+                    <!-- Category 5: Food Bag -->
+                    <article class="category-card">
+                        <div class="category-icon">
+                            <img src="images/icons/food-bag.svg" alt="شنطة خير">
+                        </div>
+                        <h3>شنطة خير</h3>
+                        <div class="category-amount">400 جنيه</div>
+                        <p>توفر شنطة غذائية شهرية لأسرة محتاجة.</p>
+                        <button class="btn btn-primary select-category" data-category="food-bag"
+                            data-amount="400">اختر</button>
+                    </article>
+
+                    <!-- Category 6: Sustainable Project -->
+                    <article class="category-card">
+                        <div class="category-icon">
+                            <img src="images/icons/sustainable.svg" alt="مشروع مستدام">
+                        </div>
+                        <h3>مشروع مستدام</h3>
+                        <div class="category-amount">من 3000 جنيه</div>
+                        <p>تساعد أسرة على بدء مشروع صغير يوفر لها دخلًا دائمًا.</p>
+                        <button class="btn btn-primary select-category" data-category="sustainable"
+                            data-amount="3000">اختر</button>
+                    </article>
+
+                    <!-- Category 7: Housing Restoration -->
+                    <article class="category-card">
+                        <div class="category-icon">
+                            <img src="images/icons/house-repair.svg" alt="ترميم منزل">
+                        </div>
+                        <h3>ترميم منزل</h3>
+                        <div class="category-amount">من 10,000 جنيه</div>
+                        <p>تساهم في ترميم منزل متهالك لأسرة محتاجة.</p>
+                        <button class="btn btn-primary select-category" data-category="housing"
+                            data-amount="10000">اختر</button>
+                    </article>
+
+                    <!-- Category 8: General Charity -->
+                    <article class="category-card">
+                        <div class="category-icon">
+                            <img src="images/icons/charity-general.svg" alt="صدقة جارية">
+                        </div>
+                        <h3>صدقة جارية</h3>
+                        <div class="category-amount">حسب اختيارك</div>
+                        <p>تبرع عام يُصرف حسب أولويات الجمعية.</p>
+                        <button class="btn btn-primary select-category" data-category="general">اختر</button>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Recurring Donation Section -->
+        <section class="recurring-donation">
+            <div class="container">
+                <h2 class="section-title">تبرع شهري</h2>
+                <p class="section-intro">يمكنك اختيار التبرع الشهري لضمان استمرار الدعم للمحتاجين.</p>
+                <div class="recurring-options">
+                    <label class="recurring-option">
+                        <input type="radio" name="donation-frequency" value="once" checked>
+                        <span class="option-label">تبرع لمرة واحدة</span>
+                    </label>
+                    <label class="recurring-option">
+                        <input type="radio" name="donation-frequency" value="monthly">
+                        <span class="option-label">تبرع شهري مستمر</span>
+                    </label>
+                </div>
+                <div class="recurring-benefit">
+                    <p><strong>الفائدة:</strong> التبرع الشهري يساعدنا على التخطيط بشكل أفضل ويضمن استمرار دعم الأسر
+                        المحتاجة.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Methods Section -->
+        <section class="payment-methods">
+            <div class="container">
+                <h2 class="section-title">طرق الدفع المتاحة</h2>
+
+                <div class="payment-options">
+
+                    <!-- Bank Transfer -->
+                    <article class="payment-method">
+                        <div class="payment-header">
+                            <img src="images/icons/bank-transfer.svg" alt="تحويل بنكي">
+                            <h3>تحويل بنكي</h3>
+                        </div>
+                        <div class="payment-details">
+                            <div class="payment-info">
+                                <span class="info-label">البنك:</span>
+                                <span class="info-value">بنك مصر</span>
+                            </div>
+                            <div class="payment-info">
+                                <span class="info-label">رقم الحساب:</span>
+                                <span class="info-value account-number">1530001000006994</span>
+                            </div>
+                            <div class="payment-info">
+                                <span class="info-label">اسم الحساب:</span>
+                                <span class="info-value">جمعية تنمية المجتمع المحلي بقلعة المرازيق</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- InstaPay -->
+                    <article class="payment-method">
+                        <div class="payment-header">
+                            <img src="images/icons/instapay.svg" alt="InstaPay">
+                            <h3>InstaPay</h3>
+                        </div>
+                        <div class="payment-details">
+                            <div class="payment-info">
+                                <span class="info-label">رقم الحساب:</span>
+                                <span class="info-value phone-number">01120387533</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Vodafone Cash -->
+                    <article class="payment-method">
+                        <div class="payment-header">
+                            <img src="images/icons/vodafone-cash.svg" alt="Vodafone Cash">
+                            <h3>Vodafone Cash</h3>
+                        </div>
+                        <div class="payment-details">
+                            <div class="payment-info">
+                                <span class="info-label">رقم المحفظة:</span>
+                                <span class="info-value phone-number">01120387533</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="payment-note">
+                    <h3>ملاحظة مهمة:</h3>
+                    <p>بعد التحويل، يرجى إرسال صورة الإيصال على رقم الواتساب: <a
+                            href="https://wa.me/201120387533">01120387533</a></p>
+                    <p>مع ذكر اسمك ونوع التبرع لنتمكن من إرسال إيصال رسمي لك.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- QR Codes Section -->
+        <section class="qr-codes">
+            <div class="container">
+                <h2 class="section-title">الدفع السريع عبر QR Code</h2>
+                <p class="section-intro">امسح الكود للتبرع مباشرة:</p>
+                <div class="qr-grid">
+                    <div class="qr-item">
+                        <img src="images/qr.png" alt="كود InstaPay">
+                        <p>InstaPay</p>
+                    </div>
+                    <div class="qr-item">
+                        <img src="images/qr.png" alt="كود Vodafone Cash">
+                        <p>Vodafone Cash</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Calculator Section -->
+        <section class="impact-calculator">
+            <div class="container">
+                <h2 class="section-title">أثر تبرعك</h2>
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="impact-amount">100 جنيه</div>
+                        <p>توفر وجبات لأسرة لمدة 3 أيام</p>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-amount">250 جنيه</div>
+                        <p>تساعد طالبًا في شراء مستلزماته الدراسية</p>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-amount">500 جنيه</div>
+                        <p>توفر شنطة غذائية كاملة لأسرة</p>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-amount">1000 جنيه</div>
+                        <p>تساهم في علاج مريض لمدة شهر</p>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-amount">5000 جنيه</div>
+                        <p>تساعد في تيسير زواج شاب</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Receipt Section -->
+        <section class="donation-receipt">
+            <div class="container">
+                <h2 class="section-title">الإيصال الرسمي</h2>
+                <p class="section-intro">نصدر إيصالات رسمية معتمدة لجميع المتبرعين.</p>
+                <div class="receipt-content">
+                    <div class="receipt-requirements">
+                        <h3>ما نحتاجه منك:</h3>
+                        <ul>
+                            <li>الاسم الكامل</li>
+                            <li>رقم الهاتف</li>
+                            <li>البريد الإلكتروني (اختياري)</li>
+                            <li>صورة إيصال التحويل</li>
+                        </ul>
+                    </div>
+                    <div class="receipt-note">
+                        <p><strong>ملاحظة:</strong> يمكنك طلب عدم ذكر اسمك إن أردت التبرع سرًا.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donor Privacy Section -->
+        <section class="donor-privacy">
+            <div class="container">
+                <h2 class="section-title">خصوصية المتبرعين</h2>
+                <p class="section-intro">نحترم خصوصية جميع المتبرعين:</p>
+                <div class="privacy-grid">
+                    <div class="privacy-item">
+                        <img src="images/icons/privacy-1.svg" alt="خصوصية">
+                        <p>لن نستخدم بياناتك إلا للتواصل الضروري</p>
+                    </div>
+                    <div class="privacy-item">
+                        <img src="images/icons/privacy-2.svg" alt="حماية">
+                        <p>لن نشارك معلوماتك مع أي جهة</p>
+                    </div>
+                    <div class="privacy-item">
+                        <img src="images/icons/privacy-3.svg" alt="سرية">
+                        <p>يمكنك التبرع دون ذكر اسمك</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zakat Section -->
+        <section class="zakat-section">
+            <div class="container">
+                <h2 class="section-title">هل تبرعك من الزكاة؟</h2>
+                <p class="zakat-intro">نحن نستقبل الزكاة ونضمن توزيعها على مستحقيها من الفقراء والمساكين والأيتام
+                    والغارمين وفق الشرع.</p>
+                <div class="zakat-option">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="is-zakat">
+                        <span>هذا التبرع من مال الزكاة</span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="donate-faq">
+            <div class="container">
+                <h2 class="section-title">أسئلة شائعة</h2>
+                <div class="faq-grid">
+
+                    <article class="faq-item">
+                        <h3>هل التبرع معفى من الضرائب؟</h3>
+                        <p>الجمعية معفاة من الضرائب كجمعية خيرية مسجلة رسميًا.</p>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3>كيف أتأكد من وصول تبرعي؟</h3>
+                        <p>سنرسل لك تأكيدًا باستلام التبرع وإيصالًا رسميًا، ويمكنك متابعة المشاريع عبر الموقع.</p>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3>هل يمكنني التبرع باسم شخص آخر؟</h3>
+                        <p>نعم، يمكنك التبرع باسم والديك أو أحبائك الأحياء أو المتوفين.</p>
+                    </article>
+
+                    <article class="faq-item">
+                        <h3>هل يمكنني زيارة الحالات المستفيدة؟</h3>
+                        <p>يمكنك التواصل معنا للترتيب لزيارة ميدانية بالتنسيق معنا مع مراعاة خصوصية المستفيدين.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom CTA Section -->
+        <section class="donate-bottom-cta">
+            <div class="container">
+                <h2>لا تؤجل صدقتك</h2>
+                <blockquote>
+                    <p>"إذا مات ابن آدم انقطع عمله إلا من ثلاث: صدقة جارية، أو علم ينتفع به، أو ولد صالح يدعو له"</p>
+                </blockquote>
+                <div class="whatsapp-cta">
+                    <p>للتبرع عبر الواتساب أو الاستفسار:</p>
+                    <a href="https://wa.me/201120387533" class="btn btn-whatsapp btn-large">
+                        <img src="images/icons/whatsapp-white.svg" alt="واتساب">
+                        تواصل معنا الآن
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about-footer">
+                    <h3>سواعد الخير</h3>
+                    <p>مجموعة خيرية تتبع جمعية تنمية المجتمع المحلي بقلعة المرازيق، نعمل على تقديم الدعم والمساعدة
+                        لرقيقي الحال في مجتمعنا.</p>
+                    <div class="registration-badge">
+                        <img src="images/icons/verified.svg" alt="معتمد">
+                        <span>جمعية مشهرة برقم 2957</span>
+                    </div>
+                </div>
+                <div class="footer-section quick-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="projects.html">أنشطتنا</a></li>
+                        <li><a href="reports.html">الشفافية والتقارير</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section get-involved">
+                    <h3>شارك معنا</h3>
+                    <ul>
+                        <li><a href="donate.html">تبرع الآن</a></li>
+                        <li><a href="volunteer.html">تطوع معنا</a></li>
+                        <li><a href="contact.html">أبلغ عن حالة</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-footer">
+                    <h3>تواصل معنا</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <img src="images/icons/phone.svg" alt="هاتف">
+                            <a href="tel:01120387533">01120387533</a>
+                        </li>
+                        <li>
+                            <img src="images/icons/whatsapp.svg" alt="واتساب">
+                            <a href="https://wa.me/201120387533">واتساب</a>
+                        </li>
+                        <li>
+                            <img src="images/icons/location.svg" alt="موقع">
+                            <span>قلعة المرازيق، مصر</span>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1DX4NWxDfU/" aria-label="فيسبوك"><img
+                                src="images/icons/facebook.svg" alt="فيسبوك"></a>
+                        <a href="#" aria-label="إنستجرام"><img src="images/icons/instagram.svg" alt="إنستجرام"></a>
+                        <a href="#" aria-label="يوتيوب"><img src="images/icons/youtube.svg" alt="يوتيوب"></a>
+                        <a href="#" aria-label="تويتر"><img src="images/icons/twitter.svg" alt="تويتر"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 سواعد الخير. جميع الحقوق محفوظة.</p>
+                <div class="footer-links">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">شروط الاستخدام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
