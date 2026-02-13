@@ -909,7 +909,7 @@ document.addEventListener('DOMContentLoaded', () => {
 الدافع للتطوع: ${motivation}%0A
 المهارات الخاصة: ${skills}`;
 
-            const phoneNumber = '201120387533';
+            const phoneNumber = '201012448385';
             window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
         });
     }
@@ -933,7 +933,7 @@ document.addEventListener('DOMContentLoaded', () => {
 الموضوع: ${subject}%0A
 الرسالة: ${message}`;
 
-            const phoneNumber = '201120387533';
+            const phoneNumber = '201012448385';
             window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
         });
     }
